@@ -9,21 +9,21 @@ This repository bridges theoretical centralized operating system concepts with p
 ## Curriculum & Lab Modules
 
 ### Part I: Operating Systems 1 (`SYS1`)
-*Course Code: `SYS1` | Credits: 5 | Coefficient: 5*[cite: 1]
+*Course Code: `SYS1` | Credits: 5 | Coefficient: 5*
 
 1. **UNIX/Linux Process Management & Scheduling**
-   - Process creation, hierarchy trees, and termination (`fork()`, `getpid()`, `getppid()`, `wait()`, `waitpid()`)[cite: 1].
-   - Program image replacement via the `exec*()` system call family and multi-stage compilation pipelines[cite: 1].
-   - Process Control Blocks (PCB), state transitions, and CPU scheduling policies (FCFS, SJF, Round-Robin, Priority, Multilevel Queues)[cite: 1].
+   - Process creation, hierarchy trees, and termination (`fork()`, `getpid()`, `getppid()`, `wait()`, `waitpid()`).
+   - Program image replacement via the `exec*()` system call family and multi-stage compilation pipelines.
+   - Process Control Blocks (PCB), state transitions, and CPU scheduling policies (FCFS, SJF, Round-Robin, Priority, Multilevel Queues).
 
 2. **Mutual Exclusion, Synchronization & System V IPC**
-   - Implementing critical sections and synchronization using Dijkstra's Semaphores (`P`/`V` primitives)[cite: 1].
-   - Classical concurrency problems: **Rendezvous** ($2$, $3$, and $n$ processes), **Readers–Writers** (arbitrary and FIFO access), **Producer–Consumer** (single, bounded, and dynamic buffers), and resource allocation[cite: 1].
-   - **UNIX System V IPC**: Shared memory segments (`shmget`, `shmat`, `shmdt`, `shmctl`), semaphore sets (`semget`, `semop`, `semctl`), and shell IPC inspection (`ipcs`, `ipcrm`)[cite: 1].
-   - High-level synchronization with **Monitors** and **Deadlock** prevention/avoidance/detection[cite: 1].
+   - Implementing critical sections and synchronization using Dijkstra's Semaphores (`P`/`V` primitives).
+   - Classical concurrency problems: **Rendezvous** ($2$, $3$, and $n$ processes), **Readers–Writers** (arbitrary and FIFO access), **Producer–Consumer** (single, bounded, and dynamic buffers), and resource allocation.
+   - **UNIX System V IPC**: Shared memory segments (`shmget`, `shmat`, `shmdt`, `shmctl`), semaphore sets (`semget`, `semop`, `semctl`), and shell IPC inspection (`ipcs`, `ipcrm`).
+   - High-level synchronization with **Monitors** and **Deadlock** prevention/avoidance/detection.
 
 3. **Program Execution & Link Editing**
-   - Static and dynamic linking workflows, ELF object module formats, and shared library creation on Linux[cite: 1].
+   - Static and dynamic linking workflows, ELF object module formats, and shared library creation on Linux.
 
 ---
 
@@ -31,17 +31,17 @@ This repository bridges theoretical centralized operating system concepts with p
 *Course Code: `SYS2` | Credits: 4 | Coefficient: 4*
 
 4. **Main & Virtual Memory Management**
-   - Contiguous memory allocation (fixed/variable partitions, fragmentation, compaction, and swapping)[cite: 2].
-   - Address translation mechanisms: **Paging** (multi-level, inverted page tables, TLB), **Segmentation**, and segmented paging[cite: 2].
-   - **Demand Paging** & Page Replacement algorithms (`FIFO`, `OPT`, `LRU`, `Second Chance`, `LFU`, `Aging`, `NRU`) and thrashing control (Working Set, PFF)[cite: 2].
+   - Contiguous memory allocation (fixed/variable partitions, fragmentation, compaction, and swapping).
+   - Address translation mechanisms: **Paging** (multi-level, inverted page tables, TLB), **Segmentation**, and segmented paging.
+   - **Demand Paging** & Page Replacement algorithms (`FIFO`, `OPT`, `LRU`, `Second Chance`, `LFU`, `Aging`, `NRU`) and thrashing control (Working Set, PFF).
 
 5. **Secondary Storage & RAID**
-   - Disk I/O performance modeling and disk head scheduling algorithms (`FCFS`, `SSTF`, `SCAN`, `C-SCAN`, `LOOK`, `C-LOOK`)[cite: 2].
-   - Storage redundancy architectures (`RAID 0`, `1`, `5`, `6`, `01`, `10`, `50`)[cite: 2].
+   - Disk I/O performance modeling and disk head scheduling algorithms (`FCFS`, `SSTF`, `SCAN`, `C-SCAN`, `LOOK`, `C-LOOK`).
+   - Storage redundancy architectures (`RAID 0`, `1`, `5`, `6`, `01`, `10`, `50`).
 
 6. **File Management Systems (SGF)**
-   - Low-level file operations, file descriptors, directory structures, and contiguous vs. non-contiguous block allocation[cite: 2].
-   - **UNIX/Linux File Systems (`ext2`/`ext3`, System V)**: Inodes, directory entries, logical volume layout, hard vs. symbolic links, and POSIX permissions (`chmod`, UID/GID)[cite: 2].
+   - Low-level file operations, file descriptors, directory structures, and contiguous vs. non-contiguous block allocation.
+   - **UNIX/Linux File Systems (`ext2`/`ext3`, System V)**: Inodes, directory entries, logical volume layout, hard vs. symbolic links, and POSIX permissions (`chmod`, UID/GID).
 
 ## Repository Structure
 
